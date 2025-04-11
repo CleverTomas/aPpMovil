@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>FutureLink - Plataforma de Vinculación Laboral</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="background-animation"></div>
+    
+    <header class="glass-header">
+        <div class="logo">
+            <i class="fas fa-network-wired"></i>
+            <h1>FutureLink</h1>
+        </div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <nav class="side-nav">
+        <ul>
+            <li><a href="#vinculacion">Vinculación</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#incentivos">Incentivos</a></li>
+            <li><a href="#planes">Planes</a></li>
+            <li><a href="#redes">Redes</a></li>
+        </ul>
+        <div class="user-controls">
+            <button class="btn-login">Ingresar</button>
+            <button class="btn-register">Registrarse</button>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Conectando Talentos del Futuro</h2>
+                <p>Plataforma digital que vincula egresados con oportunidades laborales y programas de desarrollo profesional.</p>
+                <button class="btn-primary" id="btn-explore">Explorar Oportunidades</button>
+            </div>
+        </section>
+
+        <section id="vinculacion" class="feature-section">
+            <div class="feature-card glass-card">
+                <i class="fas fa-handshake"></i>
+                <h3>Plataforma Digital de Vinculación Laboral</h3>
+                <p>Conecta a egresados con empresas dispuestas a capacitar y contratar talento fresco.</p>
+                <button class="btn-secondary" data-modal="vinculacion-modal">Más información</button>
+            </div>
+        </section>
+
+        <section id="experiencia" class="feature-section">
+            <div class="feature-card glass-card">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Programa Universitario de Experiencia Práctica</h3>
+                <p>Promueve programas curriculares con experiencia laboral práctica para estudiantes.</p>
+                <button class="btn-secondary" data-modal="experiencia-modal">Más información</button>
+            </div>
+        </section>
+
+        <section id="incentivos" class="feature-section">
+            <div class="feature-card glass-card">
+                <i class="fas fa-briefcase"></i>
+                <h3>Incentivos Gubernamentales a Empresas</h3>
+                <p>Ofrece incentivos fiscales para empresas que contraten a egresados sin experiencia.</p>
+                <button class="btn-secondary" data-modal="incentivos-modal">Más información</button>
+            </div>
+        </section>
+
+        <section id="planes" class="feature-section">
+            <div class="feature-card glass-card">
+                <i class="fas fa-route"></i>
+                <h3>Planes Adaptativos</h3>
+                <p>Ayuda a nuevos estudiantes con modalidades de fácil acceso al trabajo.</p>
+                <button class="btn-secondary" data-modal="planes-modal">Más información</button>
+            </div>
+        </section>
+
+        <section id="redes" class="feature-section">
+            <div class="feature-card glass-card">
+                <i class="fas fa-users"></i>
+                <h3>Redes de Apoyo</h3>
+                <p>Ofrece capacitaciones, mentorías y recursos para estudiantes.</p>
+                <button class="btn-secondary" data-modal="redes-modal">Más información</button>
+            </div>
+        </section>
+
+        <section class="vacancies-section">
+            <h2>Áreas de Crecimiento Profesional</h2>
+            <div class="vacancies-container">
+                <div class="vacancy-card glass-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Tecnología</h3>
+                    <p>Desarrollo web, Inteligencia Artificial, Big Data</p>
+                    <button class="btn-apply" data-modal="apply-modal">Aplicar</button>
+                </div>
+                <div class="vacancy-card glass-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Gestión Empresarial</h3>
+                    <p>Marketing Digital, Finanzas, Gestión de Proyectos</p>
+                    <button class="btn-apply" data-modal="apply-modal">Aplicar</button>
+                </div>
+                <div class="vacancy-card glass-card">
+                    <i class="fas fa-flask"></i>
+                    <h3>Ciencias</h3>
+                    <p>Investigación, Salud, Biotecnología</p>
+                    <button class="btn-apply" data-modal="apply-modal">Aplicar</button>
+                </div>
+                <div class="vacancy-card glass-card">
+                    <i class="fas fa-palette"></i>
+                    <h3>Diseño y Creatividad</h3>
+                    <p>Diseño Gráfico, UX/UI, Animación</p>
+                    <button class="btn-apply" data-modal="apply-modal">Aplicar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modales -->
+    <div id="vinculacion-modal" class="modal">
+        <div class="modal-content glass-card">
+            <span class="close-modal">&times;</span>
+            <h3>Plataforma Digital de Vinculación Laboral</h3>
+            <p>Nuestra plataforma conecta directamente a egresados con empresas que buscan talento fresco y dispuesto a aprender. A través de un sistema inteligente de coincidencias, identificamos oportunidades ideales para cada perfil.</p>
+            <ul>
+                <li>Perfil personalizado para cada usuario</li>
+                <li>Recomendaciones basadas en habilidades y preferencias</li>
+                <li>Alertas de nuevas oportunidades</li>
+                <li>Seguimiento de aplicaciones</li>
+            </ul>
+            <button class="btn-primary">Unirme a la Plataforma</button>
+        </div>
+    </div>
+
+    <div id="experiencia-modal" class="modal">
+        <div class="modal-content glass-card">
+            <span class="close-modal">&times;</span>
+            <h3>Programa Universitario de Experiencia Práctica</h3>
+            <p>Nuestro programa universitario integra experiencia laboral práctica en los currículos académicos, permitiendo a los estudiantes ganar experiencia real mientras completan sus estudios.</p>
+            <ul>
+                <li>Prácticas profesionales remuneradas</li>
+                <li>Proyectos conjuntos universidad-empresa</li>
+                <li>Oportunidades de investigación aplicada</li>
+                <li>Conferencias y talleres con empresas líderes</li>
+            </ul>
+            <button class="btn-primary">Inscribirme en el Programa</button>
+        </div>
+    </div>
+
+    <div id="incentivos-modal" class="modal">
+        <div class="modal-content glass-card">
+            <span class="close-modal">&times;</span>
+            <h3>Incentivos Gubernamentales a Empresas</h3>
+            <p>Colaboramos con el gobierno para ofrecer incentivos fiscales a empresas que contraten a egresados recientes sin experiencia previa. Estos incentivos incluyen:</p>
+            <ul>
+                <li>Reducción de impuestos durante el primer año de contratación</li>
+                <li>Subvenciones para capacitación adicional</li>
+                <li>Acceso a programas de apoyo empresarial</li>
+                <li>Reconocimiento público por compromiso con el desarrollo humano</li>
+            </ul>
+            <button class="btn-primary">Ver Requisitos</button>
+        </div>
+    </div>
+
+    <div id="planes-modal" class="modal">
+        <div class="modal-content glass-card">
+            <span class="close-modal">&times;</span>
+            <h3>Planes Adaptativos</h3>
+            <p>Nuestros planes adaptativos facilitan la transición de los estudiantes al mundo laboral, ofreciendo:</p>
+            <ul>
+                <li>Programas de capacitación modular</li>
+                <li>Opciones de trabajo parcial y remoto</li>
+                <li>Asesoramiento para superar barreras de acceso</li>
+                <li>Reconocimiento de competencias adquiridas</li>
+            </ul>
+            <button class="btn-primary">Explorar Planes</button>
+        </div>
+    </div>
+
+    <div id="redes-modal" class="modal">
+        <div class="modal-content glass-card">
+            <span class="close-modal">&times;</span>
+            <h3>Redes de Apoyo</h3>
+            <p>Nuestras redes de apoyo conectan a estudiantes con recursos y oportunidades:</p>
+            <ul>
+                <li>Mentorías con profesionales experimentados</li>
+                <li>Cursos de habilidades transversales</li>
+                <li>Red de exalumnos activa</li>
+                <li>Eventos de networking</li>
+            </ul>
+            <button class="btn-primary">Unirme a las Redes</button>
+        </div>
+    </div>
+
+    <div id="apply-modal" class="modal">
+        <div class="modal-content glass-card">
+            <span class="close-modal">&times;</span>
+            <h3>Aplicar a Vacante</h3>
+            <form id="application-form">
+                <div class="form-group">
+                    <label for="name">Nombre Completo</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="cv">Adjuntar CV</label>
+                    <input type="file" id="cv" accept=".pdf,.doc,.docx">
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Enviar Solicitud</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="login-modal" class="modal">
+        <div class="modal-content glass-card">
+            <span class="close-modal">&times;</span>
+            <h3>Iniciar Sesión</h3>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-email">Correo Electrónico</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Contraseña</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <button type="submit" class="btn-primary">Ingresar</button>
+            </form>
+            <p>¿No tienes cuenta? <a href="#" id="show-register">Regístrate aquí</a></p>
+        </div>
+    </div>
+
+    <div id="register-modal" class="modal">
+        <div class="modal-content glass-card">
+            <span class="close-modal">&times;</span>
+            <h3>Registrarse</h3>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="register-name">Nombre Completo</label>
+                    <input type="text" id="register-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-email">Correo Electrónico</label>
+                    <input type="email" id="register-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-password">Contraseña</label>
+                    <input type="password" id="register-password" required>
+                </div>
+                <div class="form-group">
+                    <label for="register-type">Soy:</label>
+                    <select id="register-type" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="graduate">Egresado</option>
+                        <option value="company">Empresa</option>
+                        <option value="university">Universidad</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-primary">Crear Cuenta</button>
+            </form>
+            <p>¿Ya tienes cuenta? <a href="#" id="show-login">Inicia sesión</a></p>
+        </div>
+    </div>
+
+    <footer class="glass-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-network-wired"></i>
+                <h2>FutureLink</h2>
+            </div>
+            <div class="footer-links">
+                <h4>Enlaces Rápidos</h4>
+                <ul>
+                    <li><a href="#">Acerca de Nosotros</a></li>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Términos de Servicio</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contacto</h4>
+                <p><i class="fas fa-envelope"></i> contacto@futurelink.com</p>
+                <p><i class="fas fa-phone"></i> +57 310 123 4567</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 FutureLink. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
